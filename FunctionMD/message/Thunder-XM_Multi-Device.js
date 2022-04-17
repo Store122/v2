@@ -202,14 +202,14 @@ ${left} ${readMore}
 ${left}${borderlist}
 ${left}${left} *LIST MENU MLBB-BOT•MD~BETA*       
 ${left}${borderlistend}
-${bracketmenu} ≥_MenuMain_ ${F}
+${bracketmenu} _MenuMain_ ${F}
 ${branch}${LETT++} ${prefix}menu
 ${branch}${LETT++} ${prefix}test
 ${branch}${LETT++} ${prefix}temp
 ${branch}${LETT++} ${prefix}listsection1
 ${branch}${LETT++} ${prefix}listsection2
 
-${bracketmenu} ≥_️DownloadMenu_ ${F}
+${bracketmenu} _️DownloadMenu_ ${F}
 ${branch}${LETT++} ${prefix}play <query>
 ${branch}${LETT++} ${prefix}lagu <query>
 ${branch}${LETT++} ${prefix}musik <query>
@@ -224,7 +224,7 @@ ${branch}${LETT++} ${prefix}youtubemp4 <link>
 ${branch}${LETT++} ${prefix}youtubemp3 <link>
 ${branch}${LETT++} ${prefix}mediafire <link>
 
-${bracketmenu} ️≥_CovertMenu_ ${F}
+${bracketmenu} ️_CovertMenu_ ${F}
 ${branch}${LETT++} ${prefix}toimg
 ${branch}${LETT++} ${prefix}tomp4
 ${branch}${LETT++} ${prefix}tomp3
@@ -232,7 +232,7 @@ ${branch}${LETT++} ${prefix}togif
 ${branch}${LETT++} ${prefix}unduh
 ${branch}${LETT++} ${prefix}sticker
 
-${bracketmenu} ≥_DeleteMenu_ ${F}
+${bracketmenu} _DeleteMenu_ ${F}
 ${branch}${LETT++} ${prefix}delete
 ${branch}${LETT++} ${prefix}del
 
@@ -249,14 +249,14 @@ ${branch}${LETT++} ${prefix}revoke
 ${branch}${LETT++} ${prefix}group <open/close>
 ${branch}${LETT++} ${prefix}hidetag
 
-${bracketmenu} ≥_RpgMenu_ ${F}
+${bracketmenu} _RpgMenu_ ${F}
 ${branch}${LETT++} ${prefix}berburu
 ${branch}${LETT++} ${prefix}mancing
 ${branch}${LETT++} ${prefix}menambang
 ${branch}${LETT++} ${prefix}mining
 ${branch}${LETT++} ${prefix}heal
 
-${bracketmenu} ≥_TextMenu_ ${F}
+${bracketmenu} _TextMenu_ ${F}
 ${branch}${LETT++} ${prefix}sci_fi _text_
 ${branch}${LETT++} ${prefix}blackpink
 ${branch}${LETT++} ${prefix}lightglow
@@ -275,13 +275,14 @@ ${branch}${LETT++} ${prefix}transformer
 ${branch}${LETT++} ${prefix}warning
 ${branch}${LETT++} ${prefix}denim
 
-${bracketmenu} ≥_IngfoMenu_ ${F}
+${bracketmenu} _IngfoMenu_ ${F}
 ${branch}${LETT++} ${prefix}owner
 ${branch}${LETT++} ${prefix}runtime    
 ${branch}${LETT++} ${prefix}profile
 ${branch}${LETT++} ${prefix}inventori
 ${branch}${LETT++} ${prefix}leaderboard
-${bracketmenu} ≥_GabutMenu_ ${F}
+
+${bracketmenu} _internetMenu_ ${F}
 ${branch}${LETT++} ${prefix}detiknews
 ${branch}${LETT++} ${prefix}wiki
 ${branch}${LETT++} ${prefix}wallpaperaccess
@@ -295,7 +296,7 @@ ${branch}${LETT++} ${prefix}brainly
 ${branch}${LETT++} ${prefix}playstore
 ${branch}${LETT++} ${prefix}webtoon
 
-${bracketmenu} Random Pict ${F}
+${bracketmenu} _Random Pict_ ${F}
 ${branch}${LETT++} ${prefix}waifu
 ${branch}${LETT++} ${prefix}awoo
 ${branch}${LETT++} ${prefix}shinobu
@@ -304,27 +305,28 @@ ${branch}${LETT++} ${prefix}megumin
 ${branch}${LETT++} ${prefix}couple
 ${branch}${LETT++} ${prefix}aesthetic
 
-${bracketmenu} ≥_AnggepGda_ ${F}
+${bracketmenu} _AnggepGda_ ${F}
 ${branch}${LETT++} ${prefix}sound1
 
-${bracketmenu} ≥_PrimbonMenu_ ${F}
+${bracketmenu} _PrimbonMenu_ ${F}
 ${branch}${LETT++} ${prefix}artinama
 
-${bracketmenu} ≥_IslamiMenu_ ${F}
+${bracketmenu} _IslamiMenu_ ${F}
 ${branch}${LETT++} ${prefix}kisahnabi
-${bracketmenu} AniManga ${F}
+
+${bracketmenu} _AniManga_ ${F}
 ${branch}${LETT++} ${prefix}manga
 ${branch}${LETT++} ${prefix}chara
 ${branch}${LETT++} ${prefix}otakudesu
 
-${bracketmenu} ≥_VidioMenu_ ${F}
+${bracketmenu} _VidioMenu_ ${F}
 ${branch}${LETT++} ${prefix}asupan
 ${branch}${LETT++} ${prefix}storywa
 
-${bracketmenu} ≥_StalkMenu_ ${F}
+${bracketmenu} _StalkMenu_ ${F}
 ${branch}${LETT++} ${prefix}igstalk
 
-${bracketmenu} ≥_AlatMenu_ ${F}
+${bracketmenu} _AlatMenu_ ${F}
 ${branch}${LETT++} ${prefix}tinyurl
 ${branch}${LETT++} ${prefix}cuttly
 ${branch}${LETT++} ${prefix}ceklokasi
@@ -336,11 +338,10 @@ ${branch}${LETT++} ${prefix}kuadrat
 ${branch}${LETT++} ${prefix}kubik
 ${branch}${LETT++} ${prefix}perkalian
 
-${bracketmenu} ≥_FunMenu_ ${F}
+${bracketmenu} _FunMenu_ ${F}
 ${branch}${LETT++} ${prefix}tebakgambar
 ${left}
 ${stick}${headtqto}
-$*AND ME*
 ${left}${A} Rifza 
 ${left}${B} Arifi Razzaq
 ${left}${A} Deff
@@ -994,6 +995,36 @@ if (q.includes('--help')) return reply(examlink)
    } catch { reply('err') }
   }
   break
+//game & fun menu
+//suit menu
+case prefix+'suit':
+  var but = [{buttonId: `/sbatu`, buttonText: { displayText: "Batu ✊" }, type: 1 }, {buttonId: `/sgunting`, buttonText: { displayText: "Gunting ✌️" }, type: 1 }, {buttonId: `/skertas`, buttonText: { displayText: "Kertas ✋" }, type: 1 }]
+  var sutit = `*[ GAME SUIT ]*\n\nNOTE : *KAMU MEMILIKI 3 BUTTON DAN 3 KESEMPATAN UNTUK MEMILIH ANTARA BATU GUNTING KERTAS\nJIKA KAMU MEMENANGKAN 3 KESEMPATAN PERMAINAN BATU GUNTING KERTAS\n*KAMU MENANG!!*`
+conn.sendMessage(from, { text: sutit, buttons: but, footer: "Pilih Button Di Bawah\n\n- _Jika Kamu Pakai WhatsApp Mod Langsung Saja Ketik /sgunting, /sbatu, /skertas_", templateButtons: but }, {quoted: msg})
+break
+case prefix+'sbatu':
+  if (isGame(sender, isOwner, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
+  const batu = [`Aku Memilih *Batu*\nKamu Memilih *Batu*\n\n!! KITA SERI !!`,`Aku Memilih *Gunting*\nKamu Memilih *Batu*\n\n!! KAMU MENANG:( !!`,`Aku Memilih *Kertas*\nKamu Memilih *Batu*\n\n!! AKU MENANG !!`]
+					const batuh = batu[Math.floor(Math.random() * batu.length)]
+					var batuh2 = `*[ GAME SUIT ]*\n\n${batuh}`
+					sock.sendMessage(from, { text: batuh2 }, { quoted: msg })
+gameAdd(sender, glimit)
+break
+case prefix+'sgunting':
+  if (isGame(sender, isOwner, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
+  const gunting = [`Aku Memilih *Batu*\nKamu Memilih *Gunting*\n\n!! AKU MENANG !!`,`Aku Memilih *Gunting*\nKamu Memilih *Gunting*\n\n!! KITA SERI !!`,`Aku Memilih *Kertas*\nKamu Memilih *Gunting*\n\n!! KAMU MENANG :( !!`]
+					const guntingh = gunting[Math.floor(Math.random() * gunting.length)]
+					var guntingh2 = `*[ GAME SUIT ]*\n\n${guntingh}`
+					sock.sendMessage(from, { text: guntingh2 }, { quoted: msg })
+gameAdd(sender, glimit)
+break
+case prefix+'skertas':
+  if (isGame(sender, isOwner, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
+  const kertas = [`Aku Memilih *Batu*\nKamu Memilih *Kertas*\n\n!! KAMU MENANG :( !!`,`Aku Memilih *Gunting*\nKamu Memilih *Kertas*\n\n!! KAMU KALAH !!`,`Aku Memilih *Kertas*\nKamu Memilih *Kertas*\n\n!! KITA SERI !!`]
+					const kertash = kertas[Math.floor(Math.random() * kertas.length)]
+					var kertash2 = `*[ GAME SUIT ]*\n\n${kertash}`
+					sock.sendMessage(from, { text: kertash2 }, { quoted: msg })
+gameAdd(sender, glimit)
 break      
 
 case 'tinyurl':
